@@ -1,0 +1,55 @@
+.testimonial-container {
+    padding: 2rem 4rem;
+    display: grid;
+    place-content: center;
+    background-color: #f4f4f4c5;
+    gap: 1rem;
+}
+
+.testimonial-heading {
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Myriad Pro Light';
+    font-size: 2rem;
+}
+
+.caraousel-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.next-btn, .prev-btn {
+    background-color: transparent;
+    border: none;
+    
+}
+
+.prev-btn img {
+    transform: rotate(180deg);
+}
+
+.next-btn img, .prev-btn img {
+    cursor: pointer;
+}
+
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 500px) {
+    .slider {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 33.3%;
+    }
+}
+

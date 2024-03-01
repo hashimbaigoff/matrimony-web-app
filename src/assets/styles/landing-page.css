@@ -1,0 +1,68 @@
+/* Fonts */
+@font-face {
+    font-family: Zapfino;
+    src: url(../fonts//Zapfino\ Linotype\ One.ttf);
+}
+@font-face {
+    font-family: Vagroln;
+    src: url(../fonts//VAGROLN.TTF);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.logo-text {
+    font: 500 8vh Zapfino;
+}
+
+/* Navigation */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;   
+}
+ul li {
+    list-style-type: none;
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+    font: 20px Vagroln;
+    color: white;
+}
+
+/* Main */
+main {
+    color: white;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10% auto;
+    background: url(../images/main-background.jpg) center/cover no-repeat;
+}
+.main-text {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+.main-font, .logo-text {
+    font-family: Zapfino;
+}
+.main-font {
+    font: 400 22vh Zapfino;
+}
+.second-main-font {
+    /* font-family: 'Poppins', sans-serif;
+    font: 400 30px 'Poppins', sans-serif; */
+    font-family: 'Myriad Pro Light';
+    font-size: 2rem;
+}

@@ -1,0 +1,46 @@
+.someone-icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+.someone-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 20%;
+}
+
+.someone-special-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-container {
+    padding: 1rem;
+    background-color: #ed7e9e;
+    border-radius: 50%;
+}
+
+.someone-heading {
+    font-family: 'Myriad Pro Bold';
+    font-size: 1.5rem;
+}
+
+.someone-description {
+    font-family: 'Myriad Pro Light';
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.someone-main-heading {
+    text-align: center;
+    font-family: 'Myriad Pro Light';
+    font-size: 2rem;
+}
+
+.someone-container {
+    padding: 3rem 0;
+}
