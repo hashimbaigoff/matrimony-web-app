@@ -16,24 +16,37 @@
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: 20% auto 10%;
+    align-items: center;
+    align-content: center;
+    padding: 0 3rem;
 }
 .logo-text {
-    font: 500 8vh Zapfino;
+    font: 500 2.5rem Zapfino;
+}
+
+.logo-text:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 /* Navigation */
 ul {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1em;   
+    gap: 2em;   
 }
+
 ul li {
     list-style-type: none;
-    padding: 1rem;
 }
+
+ul li:hover {
+    transform: scale(1.2);
+}
+
 a {
     text-decoration: none;
     font: 20px Vagroln;
@@ -45,7 +58,7 @@ main {
     color: white;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 10% auto;
+    grid-template-rows: 20% auto;
     background: url(../images/main-background.jpg) center/cover no-repeat;
 }
 .main-text {
@@ -61,8 +74,6 @@ main {
     font: 400 22vh Zapfino;
 }
 .second-main-font {
-    /* font-family: 'Poppins', sans-serif;
-    font: 400 30px 'Poppins', sans-serif; */
     font-family: 'Myriad Pro Light';
     font-size: 2rem;
 }

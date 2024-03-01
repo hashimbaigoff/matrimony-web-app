@@ -67,7 +67,7 @@ export default function Caraousel() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex(prevIndex => (prevIndex + 3 >= cardData.length ? 0 : prevIndex + 3));
-        }, 4000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, []);
