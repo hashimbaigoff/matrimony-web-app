@@ -6,18 +6,18 @@ export default function LandingPage() {
             <header>
                 <h2 className="logo-text">Altariz Matrimony</h2>
                 <article className="nav">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/">Service</a></li>
-                        <li><a href="/">How It Work</a></li>
-                        <li><a href="/">Product</a></li>
-                        <li><a href="/">Team</a></li>
+                    <ul className='header-menu'>
+                        <li><a className="header-menu-links" href="/">Home</a></li>
+                        <li><a className="header-menu-links" href="/">About Us</a></li>
+                        <li><a className="header-menu-links" href="/">Service</a></li>
+                        <li><a className="header-menu-links" href="/">How It Work</a></li>
+                        <li><a className="header-menu-links" href="/">Product</a></li>
+                        <li><a className="header-menu-links" href="/">Team</a></li>
                     </ul>
                 </article>
                 <article>
                     <ul>
-                        <li><a href="">SignIn</a></li>
+                        <li><a className="header-menu-links" href="">SignIn</a></li>
                     </ul>
                 </article>
             </header>
