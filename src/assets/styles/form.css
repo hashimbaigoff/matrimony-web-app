@@ -1,0 +1,39 @@
+/* .input-containers {
+    display: flex;
+    flex-direction: column;
+} */
+
+.container {
+    font-family: 'Myriad Pro Light';
+    margin-top: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-family: 'Myriad Pro Light';
+    width: 100%;
+    background: #000203;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form-btn {
+    background-color: #ed7e9e;
+    color: #fff;
+    font-family: 'Myriad Pro Semibold';
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.container div input, .container div select {
+    padding: .5rem;
+    font-family: 'Myriad Pro Regular';
+}

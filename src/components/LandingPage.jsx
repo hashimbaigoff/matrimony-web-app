@@ -1,5 +1,7 @@
 import '../assets/styles/landing-page.css'
 
+import Form
+ from './Form';
 export default function LandingPage() {
     return (
         <main>
@@ -25,6 +27,8 @@ export default function LandingPage() {
                 <h1 className="main-font">Get your perfect match</h1>
                 <p className="second-main-font">Trusted Matrimony & Matchmaking Service</p>
             </article>
+
+            <Form/>
         </main>
     );
 }
