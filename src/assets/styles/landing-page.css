@@ -28,11 +28,12 @@ header {
 
 .logo-text:hover {
     transform: scale(1.2);
+    transition: transform 0.5s ease-in;
     cursor: pointer;
 }
 
 /* Navigation */
-ul {
+.header-menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -43,11 +44,12 @@ ul li {
     list-style-type: none;
 }
 
-ul li:hover {
+.header-menu li:hover {
     transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }
 
-a {
+.header-menu-links {
     text-decoration: none;
     font: 20px Vagroln;
     color: white;
