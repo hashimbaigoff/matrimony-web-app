@@ -4,7 +4,7 @@ export default function FooterColumn({footerColumnTitle, footerColumnLinks}) {
             <li><h3 className="footer-column-title">{footerColumnTitle}</h3></li>
             {
                 footerColumnLinks.map((links, index)=>{
-                    return <li key={index}><a className="footer-links" href="#">{links}</a></li>
+                    return <li key={index}><a className="footer-links" href="/">{links}</a></li>
                 })
             }
         </ul>

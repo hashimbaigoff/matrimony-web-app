@@ -1,19 +1,25 @@
 import './App.css';
-import './assets/fonts/fonts.css'
 
-import LandingPage from './components/LandingPage';
-import SpecialSomeone from './components/SpecialSomeone';
-import Caraousel from './components/Caraousel';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import MainComponent from './components/MainComponent';
+import Home from './components/Home';
 import Footer from './components/Footer';
 
+
 function App() {
+
+
   return (
-    <>
-      <LandingPage />
-      <SpecialSomeone />
-      <Caraousel />
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <>
+        <MainComponent/>
+        <Routes>
+            <Route path='/' element={<Home/>} />
+          </Routes>
+        <Footer/>
+      </>
+    </BrowserRouter>
   );
 }
 
