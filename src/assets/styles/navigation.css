@@ -1,0 +1,46 @@
+/* Header */
+nav {
+    display: grid;
+    grid-template-columns: 20% auto 10%;
+    align-items: center;
+    align-content: center;
+    padding: 0 3rem;
+}
+.logo-text {
+    font: 500 2.5rem Zapfino;
+}
+
+.logo-text:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in;
+    cursor: pointer;
+}
+
+/* Navigation */
+.header-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;   
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.header-menu li:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-menu-links {
+    text-decoration: none;
+    font: 20px Vagroln;
+    color: white;
+}
+
+.nav-active {
+    font-family: 'Myriad Pro Semibold';
+    transform: rotate(90deg);
+    color: #800000;
+}

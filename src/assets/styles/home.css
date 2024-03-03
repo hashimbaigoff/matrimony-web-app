@@ -1,0 +1,35 @@
+/* Fonts */
+@font-face {
+    font-family: Zapfino;
+    src: url(../fonts//Zapfino\ Linotype\ One.ttf);
+}
+@font-face {
+    font-family: Vagroln;
+    src: url(../fonts//VAGROLN.TTF);
+}
+
+/* Main */
+main {
+    color: white;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 20% auto;
+    background: url(../images/main-background.jpg) center/cover no-repeat;
+    transition: background 4s linear;
+}
+.main-text {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+.main-font, .logo-text {
+    font-family: Zapfino;
+}
+.main-font {
+    font: 400 22vh Zapfino;
+}
+.second-main-font {
+    font-family: 'Myriad Pro Light';
+    font-size: 2rem;
+}

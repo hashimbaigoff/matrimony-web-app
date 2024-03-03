@@ -2,71 +2,31 @@ import FormLabel from "./FormLabel";
 
 import "../assets/styles/form.css"
 
-const options = [
-    ["Men", "Women"]
-]
+const formLabelOptions = {
+    gender: ["Women", "Men"],
+    agedFrom: [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+    agedTo: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+    caste: ["Reddy",
+        "Kamma",
+        "Kapu",
+        "Balija",
+        "Brahmin",
+        "Velama",
+        "Yadav",
+        "Mala",
+        "Madiga"]
+}
 
 export default function Form() {
     return (
-        // <form action="" className="matrimony-form">
-        //     <FormLabel labelTitle="I'm Lookin for" selectOptions={options}/>
-        // </form>
-        <div >
-            <form className="container">
+            <form className="form-container"> 
+                <FormLabel labelTitle="I'm looking for" selectOptions={formLabelOptions.gender}/>
+                <FormLabel labelTitle="aged" selectOptions={formLabelOptions.agedFrom} selected="30"/>
+                <FormLabel labelTitle="to" selectOptions={formLabelOptions.agedTo}/>
+                <FormLabel labelTitle="of Caste" selectOptions={formLabelOptions.caste}/>
 
-                <div>
-                    <label>Im Looking for</label>
-                    <select>
-                        <option>Select</option>
-                        <option value="Women">Women</option>
-                        <option value="Men">Men</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label>aged</label>
-                    <input type="number" id="hour" min="1" max="100" />
-                </div>
-                <div>
-                    <label for="hour">to:</label>
-                    <input type="number" id="hour" min="1" max="100" />
-                </div>
-
-
-                <div>
-                    <label>of Religion</label>
-                    <select>
-                        <option>Select</option>
-                        <option>Hindu</option>
-                        <option>Muslim</option>
-                        <option>Christian</option>
-                        <option>Jain</option>
-                        <option>Sikh</option>
-                        <option>Buddist</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <label>and Mother tongue</label>
-                    <select>
-                        <option>Select</option>
-                        <option>Telugu</option>
-                        <option>Hindi</option>
-                        <option>English</option>
-                        <option>Tamil</option>
-                        <option>Malayalam</option>
-                        <option>Kannada</option>
-                    </select>
-                </div>
-
-
-                    <button className="form-btn">Let's Begin</button>
-                
-
+                <button className="form-btn">Let's Begin</button>
 
             </form>
-
-        </div>
     );
 }

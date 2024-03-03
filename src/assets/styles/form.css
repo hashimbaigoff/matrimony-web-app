@@ -3,7 +3,7 @@
     flex-direction: column;
 } */
 
-.container {
+.form-container {
     font-family: 'Myriad Pro Light';
     margin-top: 3rem;
     padding: 3rem;
@@ -11,15 +11,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    font-family: 'Myriad Pro Light';
-    width: 100%;
+    gap: 2rem;
     background: #000203;
     text-align: center;
     font-size: 1.2rem;
 }
 
-.container div {
+.input-container {
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -31,9 +29,25 @@
     font-family: 'Myriad Pro Semibold';
     padding: .5rem;
     border-radius: 5px;
+    align-self: last baseline;
 }
 
-.container div input, .container div select {
+.form-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #ed7e9e;
+}
+
+.form-container div input, .form-select {
     padding: .5rem;
     font-family: 'Myriad Pro Regular';
+    color: #c8c8c8;
+}
+
+.form-select option {
+    background-color: #050503;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid white;
+    padding: .5rem;
 }
